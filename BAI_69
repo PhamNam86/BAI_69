@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main()
+{
+ 
+    int x, n;
+
+    printf("nhap x:");
+    scanf("%d", &x);
+    
+    printf("nhap n:");
+    scanf("%d", &n);
+    
+    int a = 1;
+    float s = x;
+
+    for (int i = 1; i <= n;i++) 
+    {        
+            
+            a = a * x * -x;
+            s = s + (a * x);
+           
+    }
+
+    printf("Ket qua la: %f\n", s);
+    return 0;
+}
